@@ -1,0 +1,46 @@
+<div class="container">
+  <h1 class="title">Pazyl'$ Bank</h1>
+
+    <div class="form-box">
+      <h2 *ngIf="!hasNumber">Enter Card Number: </h2>
+      <form [formGroup]="form" class="form" *ngIf="!hasNumber">
+        <div class="flex">
+          <input formControlName="numberCard" type="text" required maxlength="16" placeholder="XXXX-XXXX-XXXX-XXXX">
+          <button mat-flat-button color="primary" (click)="setNumberCard('1')">1</button>
+          <button mat-flat-button color="primary" (click)="setNumberCard('2')">2</button>
+          <button mat-flat-button color="primary" (click)="setNumberCard('3')">3</button>
+          <button mat-flat-button color="primary" (click)="setNumberCard('4')">4</button>
+          <button mat-flat-button color="primary" (click)="setNumberCard('5')">5</button>
+          <button mat-flat-button color="primary" (click)="setNumberCard('6')">6</button>
+          <button mat-flat-button color="primary" (click)="setNumberCard('7')">7</button>
+          <button mat-flat-button color="primary" (click)="setNumberCard('8')">8</button>
+          <button mat-flat-button color="primary" (click)="setNumberCard('9')">9</button>
+          <button mat-flat-button color="primary" (click)="setNumberCard('.')">.</button>
+          <button mat-flat-button color="primary" (click)="setNumberCard('0')">0</button>
+          <button mat-flat-button color="warn" (click)="deleteLastValue()">X</button>
+          <button mat-flat-button color="warn" class="clear-btn" (click)="clear()">CLEAR</button>
+          <button mat-flat-button color="warn" class="save-btn" (click)="enterNumberCard()">Enter</button>
+        </div>
+      </form>
+      <h2 *ngIf="hasNumber">Pin Code: </h2>
+      <form [formGroup]="form" class="form" *ngIf="hasNumber">
+        <div class="flex">
+          <input formControlName="pinCode" type="password" required maxlength="4" placeholder="XXXX">
+          <button mat-flat-button color="primary" (click)="setPinCode('1')">1</button>
+          <button mat-flat-button color="primary" (click)="setPinCode('2')">2</button>
+          <button mat-flat-button color="primary" (click)="setPinCode('3')">3</button>
+          <button mat-flat-button color="primary" (click)="setPinCode('4')">4</button>
+          <button mat-flat-button color="primary" (click)="setPinCode('5')">5</button>
+          <button mat-flat-button color="primary" (click)="setPinCode('6')">6</button>
+          <button mat-flat-button color="primary" (click)="setPinCode('7')">7</button>
+          <button mat-flat-button color="primary" (click)="setPinCode('8')">8</button>
+          <button mat-flat-button color="primary" (click)="setPinCode('9')">9</button>
+          <button mat-flat-button color="primary" (click)="setPinCode('.')">.</button>
+          <button mat-flat-button color="primary" (click)="setPinCode('0')">0</button>
+          <button mat-flat-button color="warn" (click)="deleteLastValuePinCode()">X</button>
+          <button mat-flat-button color="warn" class="clear-btn" (click)="clearPinCode()">CLEAR</button>
+          <button mat-flat-button color="warn" class="save-btn" (click)="enterPinCode()">Enter</button>
+        </div>
+      </form>
+    </div>
+</div>

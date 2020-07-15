@@ -1,0 +1,23 @@
+<div class="container">
+  <h1 class="menu-title">Pin Code</h1>
+  <div class="flex">
+    <input [(ngModel)]="pinCode" type="password" required maxlength="4" placeholder="XXXX">
+    <button mat-flat-button color="primary" (click)="setPinCode('1')">1</button>
+    <button mat-flat-button color="primary" (click)="setPinCode('2')">2</button>
+    <button mat-flat-button color="primary" (click)="setPinCode('3')">3</button>
+    <button mat-flat-button color="primary" (click)="setPinCode('4')">4</button>
+    <button mat-flat-button color="primary" (click)="setPinCode('5')">5</button>
+    <button mat-flat-button color="primary" (click)="setPinCode('6')">6</button>
+    <button mat-flat-button color="primary" (click)="setPinCode('7')">7</button>
+    <button mat-flat-button color="primary" (click)="setPinCode('8')">8</button>
+    <button mat-flat-button color="primary" (click)="setPinCode('9')">9</button>
+    <button mat-flat-button color="primary" (click)="setPinCode('.')">.</button>
+    <button mat-flat-button color="primary" (click)="setPinCode('0')">0</button>
+    <button mat-flat-button color="warn" (click)="deleteLastValuePinCode()"><mat-icon>backspace</mat-icon></button>
+    <button mat-flat-button color="warn" class="clear-btn" (click)="clearPinCode()">CLEAR</button>
+    <button mat-flat-button color="warn" class="save-btn" (click)="enterPinCode()">Enter</button>
+  </div>
+  <button mat-raised-button color="warn" class="btn-back" routerLink="/">
+    <mat-icon>keyboard_backspace</mat-icon> BACK
+  </button>
+</div>

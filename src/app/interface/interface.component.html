@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="title">
+    Operation Menu
+  </div>
+  <div class="menu">
+    <button mat-flat-button color="primary" (click)="checkStatus('/interface/withdraw')">Withdraw</button>
+    <button mat-flat-button color="primary" (click)="checkStatus('/interface/deposit')">Deposit</button>
+    <button mat-flat-button color="primary" (click)="checkStatus('/interface/balance')">Balance</button>
+    <button mat-flat-button color="primary" (click)="checkStatus('/interface/show-operations')">Show Operations</button>
+    <button mat-flat-button color="warn" (click)="exit()" class="exit-btn">EXIT</button>
+  </div>
+</div>

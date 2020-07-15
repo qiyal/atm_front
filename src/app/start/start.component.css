@@ -1,0 +1,80 @@
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.box {
+  width: 50%;
+  height: 50%;
+  /*border: 1px solid red;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.start-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.start-btn {
+  width: 30%;
+  height: 25%;
+  margin-right: 5%;
+  font-size: 40px;
+  transition: all .300s;
+  min-width: 120px;
+}
+
+.start-btn:hover {
+  background-color: #d64c3f;
+  color: #f4f4f4;
+  transform: scale(1.1);
+  /*text-shadow: 0px 0px 10px rgba(150, 150, 150, 0.9);*/
+}
+
+small {
+  color: #fff;
+  font-size: 20px;
+}
+
+.login-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.login-btn {
+  width: 30%;
+  height: 25%;
+  margin-right: 5%;
+  font-size: 40px;
+  transition: all .300s;
+  min-width: 120px;
+}
+
+.login-btn:hover {
+  background-color: white;
+  color: #000;
+}
+
+@media (max-width: 629px) {
+  .start-box {
+    flex-direction: column;
+  }
+
+  .start-btn {
+    margin-right: 0;
+    margin-bottom: 5%;
+  }
+}
+

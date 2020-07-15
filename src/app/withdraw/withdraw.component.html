@@ -1,0 +1,50 @@
+<div class="container">
+  <h1>Withdraw Menu</h1>
+  <h2>Your balance: <span class="balance-span">{{balance}} ₸</span> <span *ngIf="error" class="error">Amount must be tess than balance!</span></h2>
+  <div class="flex-box">
+    <div class="left-right-part">
+      <button mat-flat-button color="primary" (click)="choseAmount(2000)">2000</button>
+      <button mat-flat-button color="primary" (click)="choseAmount(5000)">5000</button>
+      <button mat-flat-button color="primary" (click)="choseAmount(7500)">7500</button>
+    </div>
+    <div class="main">
+      <div class="flex-input">
+        <input type="password" [(ngModel)]="value" type="text" placeholder="Enter amount">
+        <button mat-flat-button color="primary" (click)="setValue('1')">1</button>
+        <button mat-flat-button color="primary" (click)="setValue('2')">2</button>
+        <button mat-flat-button color="primary" (click)="setValue('3')">3</button>
+        <button mat-flat-button color="primary" (click)="setValue('4')">4</button>
+        <button mat-flat-button color="primary" (click)="setValue('5')">5</button>
+        <button mat-flat-button color="primary" (click)="setValue('6')">6</button>
+        <button mat-flat-button color="primary" (click)="setValue('7')">7</button>
+        <button mat-flat-button color="primary" (click)="setValue('8')">8</button>
+        <button mat-flat-button color="primary" (click)="setValue('9')">9</button>
+        <button mat-flat-button color="primary" (click)="setValue('.')">.</button>
+        <button mat-flat-button color="primary" (click)="setValue('0')">0</button>
+        <button mat-flat-button color="warn" (click)="deleteLastNumber()">X</button>
+        <button mat-flat-button color="warn" class="clear-btn" (click)="clearValue()">CLEAR</button>
+        <button mat-flat-button color="warn" class="save-btn" (click)="enterValue()">Enter</button>
+      </div>
+    </div>
+    <div class="left-right-part">
+      <button mat-flat-button color="primary" (click)="choseAmount(10000)">10000</button>
+      <button mat-flat-button color="primary" (click)="choseAmount(20000)">20000</button>
+      <button mat-flat-button color="primary" (click)="choseAmount(30000)">30000</button>
+    </div>
+  </div>
+  <button mat-raised-button color="warn" class="btn-back" routerLink="/interface">
+    <mat-icon>keyboard_backspace</mat-icon> BACK
+  </button>
+</div>
+
+<!--<div class="header">-->
+<!--  <div>-->
+<!--    <button>BTN-1</button>-->
+<!--    <button>BTN-2</button>-->
+<!--    <button>BTN-3</button>-->
+<!--  </div>-->
+<!--  <div>-->
+<!--    <button>BTN-4</button>-->
+<!--    <button>BTN-5</button>-->
+<!--  </div>-->
+<!--</div>-->

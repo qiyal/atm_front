@@ -1,0 +1,55 @@
+.container {
+  background-color: #333333;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.con {
+  width: 40%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 25px;
+  background-color: rgba(17, 17, 17, 0.90);
+}
+
+.con h1 {
+  font-family: 'Teko', sans-serif;
+  font-size: 32px;
+  letter-spacing: 3px;
+}
+
+.con h2 {
+  font-size: 32px;
+}
+
+button {
+  font-size: 20px;
+  margin-top: 30px;
+  width: 10%;
+  height: 40px;
+  vertical-align: middle;
+  transition: all .3s;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
+.icon {
+  margin-right: 15px;
+}
+
+h1 {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #fff;
+}
+
+h2 {
+  margin-top: 30px;
+  color: #05800a;
+}

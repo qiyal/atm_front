@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="con">
+    <h1>Your balance: <span>{{balance}} ₸</span></h1>
+    <div class="box">
+      <h2 class="box-title">Add: </h2>
+      <div class="flex-input">
+        <input type="password" [(ngModel)]="deposit" type="text" placeholder="Enter amount">
+        <button mat-flat-button color="primary" (click)="setValue('1')">1</button>
+        <button mat-flat-button color="primary" (click)="setValue('2')">2</button>
+        <button mat-flat-button color="primary" (click)="setValue('3')">3</button>
+        <button mat-flat-button color="primary" (click)="setValue('4')">4</button>
+        <button mat-flat-button color="primary" (click)="setValue('5')">5</button>
+        <button mat-flat-button color="primary" (click)="setValue('6')">6</button>
+        <button mat-flat-button color="primary" (click)="setValue('7')">7</button>
+        <button mat-flat-button color="primary" (click)="setValue('8')">8</button>
+        <button mat-flat-button color="primary" (click)="setValue('9')">9</button>
+        <button mat-flat-button color="primary" (click)="setValue('.')">.</button>
+        <button mat-flat-button color="primary" (click)="setValue('0')">0</button>
+        <button mat-flat-button color="warn" (click)="deleteLastNumber()">X</button>
+        <button mat-flat-button color="warn" class="clear-btn" (click)="clearValue()">CLEAR</button>
+        <button mat-flat-button color="warn" class="save-btn" (click)="enterValue()">Enter</button>
+      </div>
+    </div>
+    <button mat-raised-button color="warn" class="btn-back" routerLink="/interface">
+      <mat-icon>keyboard_backspace</mat-icon> BACK
+    </button>
+  </div>
+</div>

@@ -1,0 +1,124 @@
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  color: #fff;
+  font-family: 'Teko', sans-serif;
+  font-size: 32px;
+  letter-spacing: 3px;
+}
+
+h2 {
+  color: #fff;
+  font-weight: normal;
+}
+
+.balance-span {
+  color: #05800a;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #05800a;
+}
+
+.error {
+  color: #ee0c15;
+  margin-left: 10px;
+}
+
+
+.flex-box {
+  width: 70%;
+  background-color: #111111;
+  display: flex;
+  justify-content: space-around;
+}
+
+.left-right-part {
+  box-sizing: border-box;
+  padding: 15px;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.left-right-part button {
+  height: 50px;
+  font-size: 18px;
+}
+
+.main {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-input {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 25px;
+  justify-content: space-between;
+  background-color: #222;
+}
+
+.flex-input input {
+  width: 100%;
+  height: 70px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  padding: 5px;
+  font-size: 32px;
+  text-align: center;
+}
+
+.flex-input button {
+  width: 30%;
+  height: 60px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.clear-btn {
+  width: calc(59.5% + 25px)!important;
+  background-color: darkorange;
+}
+
+.save-btn {
+  background-color: green;
+}
+
+::placeholder {
+  color: #555;
+  text-align: left;
+  padding-left: 5px;
+}
+
+.btn-back {
+  margin-top: 20px;
+  transition: all .3s;
+}
+
+.btn-back:hover {
+  transform: scale(1.1);
+}
+
+
+/*.header {*/
+/*  width: 100%;*/
+/*  background-color: transparent;*/
+/*  display: flex;*/
+/*  justify-content: space-between;*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*}*/
